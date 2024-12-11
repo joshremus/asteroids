@@ -10,8 +10,8 @@ class Asteroid(CircleShape):
 
         #Asteroid.containers = (asteroids, updatable, drawable)
 
-    def draw(self, x, y, radius, width):
-        pygame.draw.circle("white", x, y, self.radius, 2)
+    def draw(self, screen):
+        pygame.draw.circle(screen, "white", self.position, self.radius, 2)
 
     def update(self, dt):
         #forward = pygame.Vector2
