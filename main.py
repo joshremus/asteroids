@@ -51,6 +51,13 @@ def main():
             item.draw(screen)
         #drawable.draw(screen)
 
+        for sprite in asteroids:
+            if sprite.collision_check(ship):
+                print("Game over!")
+                exit()
+            else:
+                pass
+
         # reset the display
         pygame.display.flip()
 
